@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tristano Ajmone (tajmone@gmail.com)" />
+  <title>GitHub Pandoc HTML5 Template — Preview</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../assets/github.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">GitHub Pandoc HTML5 Template</h1>
+<p class="subtitle">(!TEMPL_DATE) MIT License</p>
+</header>
+&lt;!DOCTYPE html&gt; <!--==============================================================================
+               "GitHub HTML5 Pandoc Template" v1.2 — by Tristano Ajmone           
+    ==============================================================================
+    (c) Tristano Ajmone, 2017, MIT License (MIT). Project's home repository:
+
+    - https://github.com/tajmone/pandoc-goodies
+
+    This template reuses source code taken from the following projects:
+
+    - GitHub Markdown CSS: © Sindre Sorhus, MIT License (MIT):
+      https://github.com/sindresorhus/github-markdown-css
+
+    - Primer CSS: © 2016 GitHub Inc., MIT License (MIT):
+      http://primercss.io/
+    ==============================================================================--> &lt;html<span class="math inline"><em>i</em><em>f</em>(<em>l</em><em>a</em><em>n</em><em>g</em>)</span> lang=“<span class="math inline"><em>l</em><em>a</em><em>n</em><em>g</em></span>”<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span><span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>i</em><em>r</em>)</span> dir=“<span class="math inline"><em>d</em><em>i</em><em>r</em></span>”<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span>&gt;
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="pandoc">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>o</em><em>c</em><em>m</em><em>e</em><em>t</em><em>a</em> − <em>a</em><em>u</em><em>t</em><em>h</em><em>o</em><em>r</em>)</span> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>d</em><em>o</em><em>c</em><em>m</em><em>e</em><em>t</em><em>a</em> − <em>a</em><em>u</em><em>t</em><em>h</em><em>o</em><em>r</em>)</span>
+<meta name="author" content="$docmeta-author$">
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span> <span class="math inline"><em>e</em><em>l</em><em>s</em><em>e</em></span> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>a</em><em>u</em><em>t</em><em>h</em><em>o</em><em>r</em> − <em>m</em><em>e</em><em>t</em><em>a</em>)</span>
+<meta name="author" content="$author-meta$">
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>o</em><em>c</em><em>m</em><em>e</em><em>t</em><em>a</em> − <em>d</em><em>a</em><em>t</em><em>e</em>)</span>
+<meta name="dcterms.date" content="$docmeta-date$">
+<span class="math inline"><em>e</em><em>l</em><em>s</em><em>e</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>a</em><em>t</em><em>e</em> − <em>m</em><em>e</em><em>t</em><em>a</em>)</span>
+<meta name="dcterms.date" content="$date-meta$">
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>k</em><em>e</em><em>y</em><em>w</em><em>o</em><em>r</em><em>d</em><em>s</em>)</span>
+<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span>
+<title>
+<span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>o</em><em>c</em><em>m</em><em>e</em><em>t</em><em>a</em> − <em>t</em><em>i</em><em>t</em><em>l</em><em>e</em>)</span><span class="math inline"><em>d</em><em>o</em><em>c</em><em>m</em><em>e</em><em>t</em><em>a</em> − <em>t</em><em>i</em><em>t</em><em>l</em><em>e</em></span><span class="math inline"><em>e</em><em>l</em><em>s</em><em>e</em></span><span class="math inline"><em>i</em><em>f</em>(<em>t</em><em>i</em><em>t</em><em>l</em><em>e</em> − <em>p</em><em>r</em><em>e</em><em>f</em><em>i</em><em>x</em>)</span><span class="math inline"><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em> − <em>p</em><em>r</em><em>e</em><em>f</em><em>i</em><em>x</em></span> – <span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span><span class="math inline"><em>p</em><em>a</em><em>g</em><em>e</em><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em></span><span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span>
+</title>
+<style type="text/css">@font-face{font-family:octicons-link;src:url(data:font/woff;charset=utf-8;base64,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) format('woff')}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body a{background-color:transparent;-webkit-text-decoration-skip:objects;color:#0366d6;text-decoration:none}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body code,.markdown-body kbd,.markdown-body pre{font-family:monospace,monospace}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body a:hover{text-decoration:underline}.markdown-body strong{font-weight:600}.markdown-body hr{box-sizing:content-box;overflow:hidden;background:0 0;border-bottom:1px solid #dfe2e5}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body table{border-spacing:0;border-collapse:collapse;display:block;width:100%;overflow:auto}.markdown-body td,.markdown-body th{padding:0}.markdown-body blockquote{margin:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body .pl-0{padding-left:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e1e4e8;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd{font-size:11px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1{padding-bottom:.3em;font-size:2em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:"\00a0"}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body hr{border-bottom-color:#eee}.flash{position:relative;padding:16px;color:#246;background-color:#e2eef9;border:1px solid #bac6d3;border-radius:3px}.flash p:last-child{margin-bottom:0}.flash-messages{margin-bottom:24px}.flash-warn{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.flash-error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.flash-success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.flash-plain{color:#4c4a42;background-color:#f5f5f5;border-color:#c1c1c1}</style>
+<style type="text/css">code{white-space: pre;}</style>
+<span class="math inline"><em>i</em><em>f</em>(<em>q</em><em>u</em><em>o</em><em>t</em><em>e</em><em>s</em>)</span>
+<style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>h</em><em>i</em><em>g</em><em>h</em><em>l</em><em>i</em><em>g</em><em>h</em><em>t</em><em>i</em><em>n</em><em>g</em> − <em>c</em><em>s</em><em>s</em>)</span>
+<style type="text/css">
+$highlighting-css$
+  </style>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>c</em><em>s</em><em>s</em>)</span> <link rel="stylesheet" href="$css$"> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>m</em><em>a</em><em>t</em><em>h</em>)</span> <span class="math inline"><em>m</em><em>a</em><em>t</em><em>h</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]--> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>h</em><em>e</em><em>a</em><em>d</em><em>e</em><em>r</em> − <em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em><em>s</em>)</span> <span class="math inline"><em>h</em><em>e</em><em>a</em><em>d</em><em>e</em><em>r</em> − <em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em><em>s</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span>
+</head>
+<body>
+<article class="markdown-body">
+<span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em> − <em>b</em><em>e</em><em>f</em><em>o</em><em>r</em><em>e</em>)</span> <span class="math inline"><em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em> − <em>b</em><em>e</em><em>f</em><em>o</em><em>r</em><em>e</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>t</em><em>i</em><em>t</em><em>l</em><em>e</em>)</span>
+<header>
+<h1 class="title">
+<span class="math inline"><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em></span>
+</h1>
+<span class="math inline"><em>i</em><em>f</em>(<em>s</em><em>u</em><em>b</em><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em>)</span>
+<p class="subtitle">
+<span class="math inline"><em>s</em><em>u</em><em>b</em><em>t</em><em>i</em><em>t</em><em>l</em><em>e</em></span>
+</p>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>a</em><em>u</em><em>t</em><em>h</em><em>o</em><em>r</em>)</span>
+<p class="author">
+<span class="math inline"><em>a</em><em>u</em><em>t</em><em>h</em><em>o</em><em>r</em></span>
+</p>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>d</em><em>a</em><em>t</em><em>e</em>)</span>
+<p class="date">
+<span class="math inline"><em>d</em><em>a</em><em>t</em><em>e</em></span>
+</p>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span>
+</header>
+<span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>i</em><em>f</em>(<em>t</em><em>o</em><em>c</em>)</span> <nav id="$idprefix$TOC"> <span class="math inline"><em>t</em><em>o</em><em>c</em></span> </nav> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>i</em><em>f</em></span> <span class="math inline"><em>b</em><em>o</em><em>d</em><em>y</em></span> <span class="math inline"><em>f</em><em>o</em><em>r</em>(<em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em> − <em>a</em><em>f</em><em>t</em><em>e</em><em>r</em>)</span> <span class="math inline"><em>i</em><em>n</em><em>c</em><em>l</em><em>u</em><em>d</em><em>e</em> − <em>a</em><em>f</em><em>t</em><em>e</em><em>r</em></span> <span class="math inline"><em>e</em><em>n</em><em>d</em><em>f</em><em>o</em><em>r</em></span>
+</article>
+</body>
+</html>
+<p>!def( TEMPL_VER )( v2.1 ) !def( TEMPL_DATE )( 2018-02-28 ) !comment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ “PREVIEW.md” v2.1 | 2018-02-28 Tested with “GitHub HTML5 Pandoc Template” v2.1 | 2018/02/28</p>
+<p>This file holds the contents that will go in “../GitHub-Template-Preview.html” ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<h1 id="features">Features</h1>
+<p>This is a fully stand-alone pandoc HTML5 template (embedded CSS stylesheet). It’s ideal for creating single-file documentation for projects, even on <a href="https://pages.github.com/" title="More info on GitHub Pages">GitHub Pages</a>.</p>
+<p>The template mimicks the look and feel of <a href="https://github.com/">GitHub</a> documents previews — no 100% accuracy, just the GitHubbish feel. GitHub’s styling has changed over the course of time; this template picks and chooses from older and newer versions of GitHub’s styles and color schemes, according to the author preferences.</p>
+<p><strong>CSS Styling</strong> — This template supports styling for:</p>
+<ul>
+<li>all standard markdown elements</li>
+<li><a href="#pandoc-markdown">pandoc-flavoured markdown</a></li>
+<li><a href="#gfm-features">GitHub flavored markdown elements</a></li>
+<li>some of <a href="#githubs-primer-css-features">GitHub’s Primer-CSS advanced styles</a></li>
+<li>PP Macros from the “<strong><a href="https://github.com/tajmone/pandoc-goodies/tree/master/pp" title="Go to the Pandoc-Goodies PP-Macros Library">Pandoc-Goodies PP-Macros Library</a></strong>” project</li>
+</ul>
+<p><strong>Template Variables</strong> — This template supports all the standard pandoc template variables, plus some <a href="#template-variables">custom variables</a> for additional features (eg: <code>introduction</code> to show some text before the TOC, and <code>$toc-title$</code>).</p>
+<h2 id="requirements">Requirements</h2>
+<p>Minimum pandoc version required: v2.0</p>
+<p>The template was originally adapted from the default html5 template that shipped with <mark><strong>pandoc v1.19.2.1</strong></mark> and then adapted to work with <mark><strong>pandoc v2.0.2</strong></mark> (introducing backward-compatibility breaking changes).</p>
+<h1 id="standard-typography">Standard Typography</h1>
+<p>Lorem markdownum stagna <em>de spatiantes</em> mirabatur <strong>arboribus at nunc</strong>, somnus sanguine quosque <del>genusque addenda socia</del>.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <mark>Plus ipsisque latent</mark>, genus, medio aut rima haberet.</p>
+<p>Quem palluerat, vulgaris pignora: <kbd>Crtl</kbd>+<kbd>Z</kbd>.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<h1>
+H1 Heading
+</h1>
+<h2>
+H2 Heading
+</h2>
+<h3>
+H3 Heading
+</h3>
+<h4>
+H4 Heading
+</h4>
+<h5>
+H5 Heading
+</h5>
+<h6>
+H6 Heading
+</h6>
+<blockquote>
+<p>Et vult Ulixe nec mater moras veluti spatio omnia sub quemque ripas ubi. Nil non, sub nec, ubi ferant deus pacis Turni, parentum.</p>
+<blockquote>
+<p>Ut nobis Ampycides esset indigenae eiecit domini successibus Aiaci tecta nunc terris, Argolica videres est neque. Aeacides caloris, magna canes.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<ol type="1">
+<li>Nec et tormenta tacitae decet aethere</li>
+<li>Nullamque corpus
+<ol type="1">
+<li>Sic nunc naides dubiis</li>
+<li>Virgo forti ardent</li>
+<li>Dic pro captantur exitus quo viris infera</li>
+</ol></li>
+<li>Adit Symplegadas inque</li>
+</ol>
+<h3 id="bullet-lists">Bullet Lists</h3>
+<ul>
+<li>Dic pro captantur exitus quo viris infera</li>
+<li>Humanam tenderet
+<ul>
+<li>Est esset devoveas</li>
+<li>Adit Symplegadas inque</li>
+</ul></li>
+<li>Lelex ad ira</li>
+<li>Inpositus cum genus extulit nec inseris ille</li>
+</ul>
+<h3 id="task-lists">Task Lists</h3>
+<p>!TaskList( !Task[x][Nec et tormenta tacitae decet aethere] !Task[ ][Nullamque corpus] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> !Task[x][Sic nunc naides dubiis] !Task[ ][Virgo forti ardent] </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ )</p>
+<h2 id="definition-lists">Definition lists</h2>
+<dl>
+<dt>Term 1</dt>
+<dd><p>Definition 1</p>
+</dd>
+<dt>Term 2 with <mark>inline markup</mark></dt>
+<dd><p>Definition 2</p>
+<p>Hora sequantur <em>nimium exiguis et</em> in fit coniuge aures, adfuit.</p>
+<p>Ut sentesflumen, mea ira, et ubi manus silicem.</p>
+</dd>
+</dl>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cell</td>
+<td><em>Cell</em></td>
+<td><strong>Cell</strong></td>
+</tr>
+<tr class="even">
+<td><code>Cell</code></td>
+<td>Cell</td>
+<td>Cell</td>
+</tr>
+<tr class="odd">
+<td>Cell</td>
+<td>Cell</td>
+<td>Cell</td>
+</tr>
+</tbody>
+</table>
+<h2 id="source-code-blocks">Source Code Blocks</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">#!/usr/bin/env python</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">Print the Fibonacci Sequence to output.</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">By Alex E. Rodriguez; public domain:</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co">https://github.com/arodriguez23434/arodriguez_2016_fibonacci</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">def</span> fibo(<span class="bu">int</span>):</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">    <span class="co">#Indices 0 &amp; 1 are pre-set; Addition begins at index 2</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    fibo_list <span class="op">=</span> [<span class="dv">0</span>,<span class="dv">1</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>,<span class="bu">int</span>):</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">        <span class="co">#Add previous sum to previous largest integer: (a+b)=sum -&gt; (b+sum)=new_sum -&gt; ... then append to list</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">        fibo_list.append(fibo_list[i<span class="dv">-2</span>]<span class="op">+</span>fibo_list[i<span class="dv">-1</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">    <span class="cf">return</span> fibo_list<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="bu">print</span>(fibo(<span class="dv">100</span>))<span class="op">;</span> <span class="co">#Print list </span></a></code></pre></div>
+<div class="Alert">
+<p><strong>HIGHLIGHT-STYLE</strong> — Source code is highlighted using either pandoc’s default style (<code>pygments</code>) or the style set at invocation by the <code>--highlight-style=STYLE|FILE</code> option. This document uses the <code>haddock</code> built-in style.</p>
+<p>The template’s embedded CSS doesn’t define the syntax coloring style, leaving you the freedom to use your own style definition files or pandoc’s built-in styles.</p>
+</div>
+<h1 id="pandoc-markdown">Pandoc Markdown</h1>
+<h2 id="line-blocks">Line Blocks</h2>
+<div class="line-block">The limerick packs laughs anatomical<br />
+In space that is quite economical.<br />
+   But the good ones I’ve seen<br />
+   So seldom are clean<br />
+And the clean ones so seldom are comical</div>
+<p><br />
+</p>
+<div class="Note">
+<p><strong>NOTE</strong> — Pandoc v2.x no longer adds inline CSS to Line blocks, it assigns them the “<code>line-block</code>” class instead, leaving it up to the end-user to define it in the CSS stylesheet. This templates covers Line blocks style definitions.</p>
+</div>
+<h1 id="gfm-features">GFM Features</h1>
+<h2 id="inline-text-elements">Inline text elements</h2>
+<p>You can use the <code>&lt;mark&gt;</code> tag to <mark>highlight text</mark>.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p>!def(kbdEx)(!kbd(Ctrl)(Alt)(Canc))</p>
+<p>Keystroke can be rendered with <code>&lt;key&gt;</code> tag: <kbd>Shift</kbd>+<kbd>U</kbd>; or by using the <code>!raw(!kbd)</code> PP macro from the <a href="https://github.com/tajmone/pandoc-goodies/tree/master/pp#inline-formatting" title="More info about the Inline Formatting macros set">Inline Formatting macros set</a>, eg: <code>!rawdef(kbdEx)</code> to output !kbdEx.</p>
+<h2 id="task-lists-1">Task Lists</h2>
+<p>!def(tasklistEx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> !TaskList( !Task[x][I’m a <em>checked</em> task] !Task[ ][I’m an <em>unchecked</em> task] </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> !Task[x][I’m a sub-task] !Task[ ][<mark>Mee too!</mark>] </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> ) </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>GFM Task Lists can be used within pandoc markdown documents through our custom pp macros. Example:</p>
+<pre><code>!rawdef(tasklistEx)</code></pre>
+<p>… will produce:</p>
+<p>!tasklistEx</p>
+<p>Markdown formatting in the macro parameters is properly rendered.</p>
+<h1 id="githubs-primer-css-features">GitHub’s Primer-CSS Features</h1>
+<h2 id="alerts">Alerts</h2>
+<p>Alerts (aka <em>flash messages</em>) are borrowed/inspired from <strong>Primer CSS</strong>, the library that handles all the styling of GitHub’s portal:</p>
+<ul>
+<li><a href="http://primercss.io/archive/alerts/" class="uri">http://primercss.io/archive/alerts/</a></li>
+</ul>
+<p>!def(alertGen) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ :::::: !1 <strong>!1</strong> — I’m the “!1” alert! :::::::::::::::::::::: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>!alertGen[Alert] !alertGen[Warning] !alertGen[Error] !alertGen[Success] !alertGen[Note]</p>
+<h3 id="creating-alerts-via-fenced-divs">Creating Alerts Via Fenced-Divs</h3>
+<p>This templates emulates Primer’s Alerts via custom <code>&lt;div&gt;</code> classes (case-sensitive):</p>
+<ul>
+<li><code>.Alert</code> (blue)</li>
+<li><code>.Warning</code> (yellow)</li>
+<li><code>.Error</code> (red)</li>
+<li><code>.Success</code> (green)</li>
+<li><code>.Note</code> (grey)</li>
+</ul>
+<p>You can use the above class-names with pandoc’s new <a href="http://pandoc.org/MANUAL.html#extension-fenced_divs" title="More info about pandoc fenced-divs syntax">fenced-divs</a> syntax to display alerts in your documents:</p>
+<p>!def(alertEx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ::::: Warning ::::::::::::::::::::::::::::::::::::::::: <strong>BEWARE</strong> — The grey <code>.Note</code> alert is a our own addition, it’s not part of Primer-CSS’ original Alerts! ::::::::::::::::::::::::::::::::::::::::::::::::::::::: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<pre><code>!alertEx</code></pre>
+<p>… result:</p>
+<p>!alertEx</p>
+<h3 id="creating-alerts-via-pp-macros">Creating Alerts Via PP Macros</h3>
+<p>Alternatively, you can create alerts using the PP macros from the <a href="https://github.com/tajmone/pandoc-goodies/tree/master/pp#github-alerts" title="More info about the Alerts macros set">GitHub Alerts macros set</a>:</p>
+<p>!raw ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ - <code>!GFMAlert( CONTENTS )</code> — <strong>Alert</strong> (blue) - <code>!GFMError( CONTENTS )</code> — <strong>Warning</strong> (red) - <code>!GFMWarn( CONTENTS )</code> — <strong>Error</strong> (yellow) - <code>!GFMSuccess( CONTENTS )</code> — <strong>Success</strong> (green) - <code>!GFMAlertNote( CONTENTS )</code> — <strong>Note</strong> (grey) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>Example:</p>
+<p>!def(alertExPP) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> !GFMAlert </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>ALERT</strong> — I’m an alert created using a PP macro from the “GitHub Alerts” macros set.</p>
+<p>I can contain <strong>markdown</strong> formatting and <mark>my contents may span over multiple paragraphs</mark>.</p>
+<p>Any kind of markdown element and block may be placed inside <code>GFMAlert</code> macros:</p>
+<ul>
+<li>Apples</li>
+<li>Bananas</li>
+<li>Oranges</li>
+</ul>
+<p>… including nested PP macros:</p>
+<p>!TaskList ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> !Task[x][Delete <code>temp.bat</code>] !Task[ ][Press !kbd(Ctrl)(Z)] </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<sub> </sub>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<pre><code>!rawdef(alertExPP)</code></pre>
+<p>… result:</p>
+<p>!alertExPP</p>
+<p>These are the different type of alerts available, along with the custom pp-macros used generate them:</p>
+<p>!GFMAlert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>Alert</strong> — Created with the <code>!raw(!GFMAlert())</code> PP macro. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>!GFMWarn ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>Warning</strong> — Created with the <code>!raw(!GFMWarn())</code> PP macro. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>!GFMError ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>Error</strong> — Created with the <code>!raw(!GFMError())</code> PP macro. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>!GFMSuccess ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>Success</strong> — Created with the <code>!raw(!GFMSuccess())</code> PP macro. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>!GFMAlertNote ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ <strong>Note</strong> — Created with the <code>!raw(!GFMAlertNote())</code> PP macro. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<h1 id="template-variables">Template Variables</h1>
+<p>Beside supporting all the standard pandoc template variables (pandoc v2.0.2), some extra variables were added to the template to allow finer customization.</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 70%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>VAR NAME</th>
+<th>DESCRIPTION</th>
+<th>DEFAULT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>$summary$</code></td>
+<td>A block of text that will be displayed right before the TOC.<br /> Wrapped in <code>&lt;div class=&quot;summary&quot;&gt;</code>.</td>
+<td>empty</td>
+</tr>
+<tr class="even">
+<td><code>$toc-title$</code></td>
+<td>Title for Table of Contents.</td>
+<td><code>Contents</code></td>
+</tr>
+<tr class="odd">
+<td><code>$charset$</code></td>
+<td>Override document encoding.</td>
+<td><code>utf-8</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-summary-variable">The <code>$summary$</code> Variable</h2>
+<p>The <code>$summary$</code> text belongs to the <code>&lt;header&gt;</code> block, so it won’t be displayed unless <em>title</em> was definied. It will be placed after <em>authors</em> and <em>date</em>, and right before <em>Table of Contentes</em>. It will parsed as markdown, so it offers an easy way to add introductiory text directly in the document’s YAML header.</p>
+<p>You can see an example of the <code>$summary$</code> var at work right in this page.</p>
+<h2 id="the-charset-variable">The <code>$charset$</code> Variable</h2>
+<p>I’ve added the <code>$charset$</code> variable because I was having trouble using the template inside the WebBrowser Control in a Windows application I created (a markdown file previewer that uses pandoc and this template to quickly render an html preview via WebBrowser Control). The programming language I used would only allow injecting HTML into the WebBrowser Control as UCS-2 enconded Unicode strings, even if pandoc’s output was captured as UTF-8 — ie., while I/O operations allow using different encondings, all internal string operations are restricted to UCS-2.</p>
+<p>The problem was fixed by setting <code>$charset$</code> to <code>windows-1251</code> when invoking pandoc from my Windows application (command line option <code>-V charset=windows-1251</code>), as the actual document presented to the WebBrowser Control would no longer be in UTF-8 but in UCS-2 due to internal conversion.</p>
+<p>Therefore I thought that there might be other scenarios which might require overriding the default charset encoding of the template because of encoding conversions occuring in a toolchain, protocol transmissions, or whatever. Even though UTF-8 is now the standard enconding for most source and output files when it comes to markdown and HTML, having this optional template variable allows handling edge cases.</p>
+<p>!comment ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ REFERENCE LINKS DEFINITIONS<br />
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Nec opus caecoque frondibus fervet.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Hora sequantur <em>nimium exiguis et</em> in fit coniuge aures, adfuit.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>Turni, parentum. Ut nobis Ampycides esset indigenae eiecit domini successibus Aiaci tecta nunc terris, Argolica videres est neque. Aeacides caloris, magna canes.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
+</body>
+</html>

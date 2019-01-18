@@ -72,6 +72,9 @@
 </head>
 
 <body>
+  <div style="background: blue;position: relative;width: 100%;height:100%;">
+
+  </div>
   <div class="collapse animted">
 
   </div>
@@ -84,7 +87,6 @@
       }
     }
 
-    // 删除类名
     HTMLElement.prototype.removeClass = function removeClass(name) {
       if (this.classList.contains(name)) {
         this.classList.remove(name);
@@ -110,22 +112,23 @@
           var self = this;
           this.el.holder.addEventListener("touchstart", function (event) {
             self.start(event);
-          }, false);
+          }, true);
 
           this.el.holder.addEventListener("touchend", function (event) {
             self.end(event);
-          }, false);
+          }, true);
 
           this.el.holder.addEventListener("mousedown", function (event) {
             self.start(event);
-          }, false);
+          }, true);
 
           this.el.holder.addEventListener("mouseup", function (event) {
             self.end(event);
-          }, false);
+          }, true);
         },
 
         start: function (event) {
+          console.log('ppp');
           this.touchstartpostion = event.type === 'mousedown' ? event.pageY : event.changedTouches[0].pageY;
         },
 

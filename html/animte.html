@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .animted {
+      animation-duration: .6s;
+    }
+
+    .slideInRight {
+      animation-name: slideInRight;
+      animation-fill-mode: backwards;
+    }
+
+    .slideInLeft {
+      animation-name: slideInLeft;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translate3d(-50%, 0, 0);
+        visibility: visible;
+      }
+
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+      }
+
+      to {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+
+    /* 正文样式 */
+    .view-container {
+      position: relative;
+      height: 100%;
+      width: 200%;
+    }
+
+    .view-container>div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+    }
+
+    .view-container>.main {
+      left: 0;
+      right: 50%;
+      background: red;
+    }
+
+    .view-container>.outlink {
+      left: 50%;
+      right: 0;
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="view-container animted">
+    <div class="main"></div>
+    <div class="outlink"></div>
+  </div>
+
+  <script>
+    HTMLElement.prototype.addClass = function (name) {
+      if (!this.classList.contains(name)) {
+        this.classList.add(name);
+      }
+    }
+
+    HTMLElement.prototype.removeClass = function removeClass(name) {
+      if (this.classList.contains(name)) {
+        this.classList.remove(name);
+      }
+    }
+
+
+
+    onload = () => {
+      var viewContainerEle = document.querySelector('.view-container');
+      var mainEle = document.querySelector(".main");
+      var outlinkEle = document.querySelector('.outlink');
+
+      function slideToMain() {
+        viewContainerEle.removeClass('slideInLeft');
+        viewContainerEle.addClass('slideInRight');
+        console.log('-------');
+      }
+
+      function slideToMain() {
+        viewContainerEle.removeClass('slideInLeft');
+        viewContainerEle.addClass('slideInRight');
+      }
+
+      function slideToView() {
+        viewContainerEle.removeClass('slideInRight');
+        viewContainerEle.addClass('slideInLeft');
+      }
+
+      mainEle.addEventListener('click', function () {
+        slideToView();
+      })
+
+      outlinkEle.addEventListener('click', function () {
+        slideToMain();
+      })
+
+    }
+  </script>
+</body>
+
+</html>

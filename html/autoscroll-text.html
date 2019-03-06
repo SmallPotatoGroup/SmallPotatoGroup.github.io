@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 公用函数
+    /*×
+     * 获取keyframe对象
+     * name 动画名称
+     * */
+    function getRule(name) {
+      var cssRule = [];
+      var ss = document.styleSheets;
+      var i = 0,
+        j = 0; //下标：i 外部样式 j 外部样式中某一项
+      _.forEach(ss, function (css) {
+        j = 0;
+        _.forEach(css.cssRules, function (rule) {
+          if (rule.name === name && rule.type === CSSRule.KEYFRAMES_RULE) {
+            cssRule[0] = i;
+            cssRule[1] = j;
+            cssRule[2] = rule;
+          }
+          j++;
+        });
+        i++;
+      });
+      return cssRule;
+    }
+    /*×
+     * 重新设置keyframe动画的内容
+     * name 动画名称 animate 动画内容
+     * */
+    function setKeyframe(name, animate) {
+      var css = document.styleSheets;
+      var cssRule = getRule(name);
+      css[cssRule[0]].deleteRule(cssRule[1]);
+      css[cssRule[0]].insertRule(animate, cssRule[1]);
+    }
+  </script>
+</body>
+
+</html>

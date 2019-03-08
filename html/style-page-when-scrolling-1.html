@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css">
+    html body {
+      min-height: 100%;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: 100%;
+      min-height: 3em;
+      background-color: #eee;
+    }
+
+    html:not([data-scroll='0']) body {
+      padding-top: 3em;
+    }
+
+    html:not([data-scroll='0']) header {
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    }
+
+    header {
+      box-sizing: border-box;
+      padding: 1em;
+      transition: background-color .25s;
+    }
+
+    main {
+      padding: 1em 1em 0 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 正文内容 -->
+  <header>
+    修改头部的样式
+  </header>
+
+  <main>
+    <p>3月6日下午，十三届全国人大二次会议江西省代表团在住地举行全体会议，审议政府工作报告，并向境内外记者开放。</p>
+
+    <p>省委书记、省人大常委会主任、江西省代表团团长刘奇主持会议。他开门见山，向与会记者表示诚挚欢迎。他说，江西是一块革命传统光荣的红土圣地，是一个生态环境优美的绿色家园，是一幅文化底蕴深厚的千年画卷，是一片充满生机活力的发展热土。当前，我们以习近平总书记视察江西三周年为新起点，深入学习贯彻习近平新时代中国特色社会主义思想和党的十九大精神，从更高层次贯彻落实习近平总书记对江西工作的重要要求，大力推进高质量跨越式发展，加快建设富裕美丽幸福现代化江西，共绘新时代江西物华天宝人杰地灵新画卷。欢迎大家到江西去做客。</p>
+
+    <p>人民日报、新华社、中央广播电视总台、光明日报、经济日报、中国日报、路透社、彭博新闻社、朝日新闻、香港商报等45家境内外媒体102名记者到会采访。</p>
+
+    <p>面对摄影、摄像记者架起的镜头长阵，代表们以高度的责任感认真审议、共商国是。易炼红、朱虹、兰念瑛、李秀香、王少玄、罗小云、宁钢7位代表结合审议政府工作报告，分别围绕全省经济社会发展、文化强省、乡村旅游、长江经济带发展、脱贫攻坚、河长制湖长制、陶瓷文化作了发言，提出意见建议。一个蓬勃发展的江西，一个欣欣向荣的江西，一个璀璨炫美的江西，深深吸引了记者们的目光。</p>
+
+    <p>审议发言后，媒体记者们就各自关心的问题争相举手提问。张小平、谢来发、杨贵平、林印孙、孔发龙、夏文勇等代表分别回答了境内外记者关于打造“五型”政府、建设秀美乡村、发展新兴产业、推动民营经济发展、强化金融服务实体经济、传统产业转型升级的提问。闪光灯下，我省全国人大代表用客观事实论发展、立足时代谈打算，展现了发展江西的自信、开放江西的从容。</p>
+
+    <p>向世界展示江西，让世界了解江西。开放活动持续了近3个小时，现场气氛热烈，掌声阵阵。在结束时，刘奇再次热情相约：真诚希望大家一如既往地关心江西、支持江西、宣传江西、推介江西，期盼各位记者到江西采访采风，亲身感受江西改革发展取得的新成绩，亲身感受赣鄱儿女奋发进取的新风貌。</p>
+
+    <p>孙新阳、周萌、胡可明、马志武、胡强、葛晓燕、田云鹏、史文清、刘德培等参加审议。国家部委有关部门负责同志到会听取审议意见。</p>
+
+  </main>
+  <script>
+    // The debounce function receives our function as a parameter
+    const debounce = (fn) => {
+
+      // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+      let frame;
+
+      // The debounce function returns a new function that can receive a variable number of arguments
+      return (...params) => {
+
+        // If the frame variable has been defined, clear it now, and queue for next frame
+        if (frame) {
+          cancelAnimationFrame(frame);
+        }
+
+        // Queue our function call for the next frame
+        frame = requestAnimationFrame(() => {
+
+          // Call our function and pass any params we received
+          fn(...params);
+        });
+
+      }
+    };
+
+
+    // Reads out the scroll position and stores it in the data attribute
+    // so we can use it in our stylesheets
+    const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+    }
+
+    // Listen for new scroll events, here we debounce our `storeScroll` function
+    document.addEventListener('scroll', debounce(storeScroll), {
+      passive: true
+    });
+
+    // Update scroll position for first time
+    storeScroll();
+  </script>
+</body>
+
+</html>
